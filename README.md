@@ -67,7 +67,7 @@ New code, new error. Now, running this code gave the following error message:
 It seems that `d3.event` can only be read from, not written to. I wasn't able to find where that is set up in d3's code, but I did find [this test](https://github.com/d3/d3/blob/17fbf8d4b16ed19303d71dee4881d871bddbc037/test/d3-test.js#L11-L20), which suggested that I could write to `d3Selection.event`, and it would change the value of `d3.event`. Inspecting the property in node confirmed that:
 
 ```
-$node
+$ node
 > const d3 = require('d3')
 undefined
 > Object.getOwnPropertyDescriptor(d3, 'event').get.toString()
