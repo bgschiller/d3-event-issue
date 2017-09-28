@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>d3 event troubles</title>
+  </head>
+  <body>
+    <h2>background will be blue if all is well</h2>
+  </body>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script>
+    document.body.onload = function () {
+      document.body.style.backgroundColor ='blue';
+      window.onerror = function() {
+        document.body.style.backgroundColor = 'red';
+      }
+
+      d3.event = 'twelve';
+      if (d3.event === 'twelve') {
+        document.body.style.backgroundColor ='blue';
+      }
+    };
+  </script>
+</html>
