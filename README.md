@@ -84,9 +84,9 @@ Debugging on her machine showed that *somehow*, setting d3Selection.event wasn't
 
 ![](https://trello-attachments.s3.amazonaws.com/58d428743111af1d0a20cf28/59cd21030a4bec508e696a3c/bcb076afbf2615dcafe69a7d7deb9140/capture.png)
 
-## The story continues
+## ~The story continues~ (solved it. see below)
 
-I still haven't solved this yet. I don't know why it works on my machine but not Katie's. I put together this repo to make it easier to investigate. Check out
+~I still haven't solved this yet. I don't know why it works on my machine but not Katie's.~ I put together this repo to make it easier to investigate. Check out
 
 - [setting d3.event directly](https://brianschiller.com/d3-event-issue/dist/setD3Event.html) (and the [source](./src/index.js))
 - [setting d3Selection.event](https://brianschiller.com/d3-event-issue/dist/setD3SelectionEvent.html) (and the [source](./src/selectionIndex.js)
