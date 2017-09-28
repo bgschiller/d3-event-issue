@@ -88,9 +88,9 @@ Debugging on her machine showed that *somehow*, setting d3Selection.event wasn't
 
 I still haven't solved this yet. I don't know why it works on my machine but not Katie's. I put together this repo to make it easier to investigate. Check out
 
-- [setting d3.event directly](http://htmlpreview.github.com/?https://github.com/bgschiller/d3-event-issue/blob/master/dist/setD3Event.html) (and the [source](./src/index.js))
-- [setting d3Selection.event](http://htmlpreview.github.com/?https://github.com/bgschiller/d3-event-issue/blob/master/dist/setD3SelectionEvent.html) (and the [source](./src/selectionIndex.js)
-- [setting d3.event directly, but without bundling d3 with webpack](http://htmlpreview.github.com/?https://github.com/bgschiller/d3-event-issue/blob/master/dist/cdn-d3.html)
+- [setting d3.event directly](https://brianschiller.com/d3-event-issue/dist/setD3Event.html) (and the [source](./src/index.js))
+- [setting d3Selection.event](https://brianschiller.com/d3-event-issue/dist/setD3SelectionEvent.html) (and the [source](./src/selectionIndex.js)
+- [setting d3.event directly, but without bundling d3 with webpack](https://brianschiller.com/d3-event-issue/dist/cdn-d3.html)
 
 ## Got an idea?
 

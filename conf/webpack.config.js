@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: outputFolder,
     filename: "[name].js",
-    publicPath: "/"
+    publicPath: "/d3-event-issue/dist/"
   },
   plugins: [
     new HtmlWebpackPlugin({
