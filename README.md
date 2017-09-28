@@ -116,3 +116,9 @@ Uncaught TypeError: measure.select(...).attr(...).attr(...).attr(...).attrs is n
 ## Potentially Relevant Links
 
 - https://github.com/d3/d3/issues/2733#issuecomment-271321156
+
+## A Solution! but not a satisying one...
+
+Deleting the `node_modules/` directory, and doing a fresh `npm install` fixed things. My guess is that when I did `require('d3-selection')`, my coworker's machine was grabbing a different version than the `require('d3')` version was using internally.
+
+Maybe `'d3-selection'` was once listed in package.json as a direct dependency, rather than a transitive dependency from d3? So when we set `d3Selection.event = ...`, it was assigning to a totally different copy of `d3Selection` than `d3.event` was reading from.
