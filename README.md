@@ -117,7 +117,7 @@ Uncaught TypeError: measure.select(...).attr(...).attr(...).attr(...).attrs is n
 
 - https://github.com/d3/d3/issues/2733#issuecomment-271321156
 
-## A Solution! but not a satisying one...
+## A Solution! but not a satisfying one...
 
 Deleting the `node_modules/` directory, and doing a fresh `npm install` fixed things. My guess is that when I did `require('d3-selection')`, my coworker's machine was grabbing a different version than the `require('d3')` version was using internally.
 
